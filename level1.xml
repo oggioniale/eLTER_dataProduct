@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:stmml="http://www.xml-cml.org/schema/stmml-1.2" packageId="87cdb923-4e9e-40eb-9ab0-d1ac50e3f0af" system="uuid" xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://eml.ecoinformatics.org/eml-2.2.0/eml.xsd">
+  <dataset>
+    <title>A long-term (1986-2010) phytoplankton dataset from the LTER-Italy site Lake Candia</title>
+    <creator>
+      <individualName>
+        <givenName>Alessandro</givenName>
+        <givenName>alessandro.oggioni@cnr.it</givenName>
+        <surName>Oggioni</surName>
+      </individualName>
+      <electronicMailAddress>cre</electronicMailAddress>
+    </creator>
+    <pubDate>2023</pubDate>
+    <abstract>This georeferenced dataset describes a 25-year (1986-2010) monitoring studies of phytoplankton abundance and biomass in Lake Candia, a eutrophic, natural, small, and shallow lake located in north-western Italy. The lake has been subjected to biomanipulation experiments aiming to improve its water quality since 1986 to 2010. It belongs to the national (LTER-Italy), European (LTER-Europe) and International (ILTER) long-term ecological research (LTER) networks. Making available this dataset also represents a contribution to the current activities of the LTER networks, aiming at making accessible the time series of the LTER sites, in order to reconstruct trends and dynamics and to identify and compare reliable trends and can be useful for further ecological and biodiversity studies on small and shallow lakes. The interest of the dataset is also remarkable because Lake Candia belongs to the national (LTER-Italy), European (LTER-Europe) and International (ILTER) long-term ecological research (LTER) networks, where the long-term site-based monitoring approach and the site comparison are important to determine spatial and temporal trends and changes.</abstract>
+    <keywordSet>
+      <keyword>occurrence</keyword>
+      <keyword>Darwin Core</keyword>
+      <keyword>GBIF</keyword>
+      <keyword>occurrences</keyword>
+      <keyword>phytoplankton</keyword>
+      <keyword>LTER-Italy</keyword>
+      <keyword>Lake Candia</keyword>
+      <keywordThesaurus>...</keywordThesaurus>
+    </keywordSet>
+    <intellectualRights>Creative Commons Attribution (CC-BY) 4.0 License</intellectualRights>
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>Lake Candia is located near the city of Tourin in the northern-western Italy and belongs to the Italian, European and International Long-Term Ecological Research (LTER) Networks: Candia (https://deims.org/c7fe4203-24b1-4d11-a573-99b99204fede).</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>7.8982</westBoundingCoordinate>
+          <eastBoundingCoordinate>7.9222</eastBoundingCoordinate>
+          <northBoundingCoordinate>45.3327</northBoundingCoordinate>
+          <southBoundingCoordinate>45.3185</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+      <temporalCoverage>
+        <rangeOfDates>
+          <beginDate>
+            <calendarDate>1986-03-06</calendarDate>
+          </beginDate>
+          <endDate>
+            <calendarDate>1987-12-02</calendarDate>
+          </endDate>
+        </rangeOfDates>
+      </temporalCoverage>
+      <taxonomicCoverage>
+        <taxonomicClassification>
+          <taxonRankName>Species</taxonRankName>
+          <taxonRankValue>Asterionella formosa</taxonRankValue>
+          <taxonRankValue>Melosira varians</taxonRankValue>
+          <taxonRankValue>Chrysococcus</taxonRankValue>
+          <taxonRankValue>Dinobryon divergens</taxonRankValue>
+          <taxonRankValue>Mallomonas akrokomos</taxonRankValue>
+          <taxonRankValue>Mallomonas</taxonRankValue>
+          <taxonRankValue>Oocystis</taxonRankValue>
+          <taxonRankValue>Pediastrum duplex</taxonRankValue>
+          <taxonRankValue>Sorastrum</taxonRankValue>
+          <taxonRankValue>Sphaerocystis schroeteri</taxonRankValue>
+          <taxonRankValue>Staurastrum gracile</taxonRankValue>
+          <taxonRankValue>Woronichinia robusta</taxonRankValue>
+          <taxonRankValue>Drepanochloris nannoselene</taxonRankValue>
+          <taxonRankValue>Closterium</taxonRankValue>
+          <taxonRankValue>Cosmarium</taxonRankValue>
+          <taxonRankValue>Franceia ovalis</taxonRankValue>
+          <taxonRankValue>Planktolyngbya limnetica</taxonRankValue>
+          <taxonRankValue>Synedra radians var. radians</taxonRankValue>
+          <taxonRankValue>Merismopedia</taxonRankValue>
+          <taxonRankValue>Scenedesmus</taxonRankValue>
+          <taxonRankValue>Ceratium hirundinella</taxonRankValue>
+          <taxonRankValue>Closterium acutum var. variabile</taxonRankValue>
+          <taxonRankValue>Lemmermannia triangularis</taxonRankValue>
+          <taxonRankValue>Schroederia setigera</taxonRankValue>
+          <taxonRankValue>Rhabdogloea smithii</taxonRankValue>
+          <taxonRankValue>Peridinium</taxonRankValue>
+          <taxonRankValue>Phacus tortus</taxonRankValue>
+          <taxonRankValue>Ankistrodesmus falcatus</taxonRankValue>
+          <taxonRankValue>Tetraedron minimum</taxonRankValue>
+          <taxonRankValue>Limnothrix pseudospirulina</taxonRankValue>
+          <taxonRankValue>Microcystis aeruginosa</taxonRankValue>
+          <taxonRankValue>Oscillatoria planctonica</taxonRankValue>
+          <taxonRankValue>Closterium gracile</taxonRankValue>
+          <taxonRankValue>Elakatothrix</taxonRankValue>
+          <taxonRankValue>Staurastrum avicula var. lunatum</taxonRankValue>
+          <taxonRankValue>Tetraedron trigonum</taxonRankValue>
+          <taxonRankValue>Mallomonas tonsurata</taxonRankValue>
+          <taxonRankValue>Dictyosphaerium</taxonRankValue>
+          <taxonRankValue>Uroglena</taxonRankValue>
+          <taxonRankValue>Fragilaria crotonensis</taxonRankValue>
+          <taxonRankValue>Cryptomonas</taxonRankValue>
+          <taxonRankValue>Rhodomonas</taxonRankValue>
+          <taxonRankValue>Dinobryon</taxonRankValue>
+          <taxonRankValue>Chrysidalis</taxonRankValue>
+          <taxonRankValue>Mallomonas caudata</taxonRankValue>
+          <taxonRankValue>Coelastrum</taxonRankValue>
+        </taxonomicClassification>
+      </taxonomicCoverage>
+    </coverage>
+    <contact>
+      <individualName>
+        <givenName>Alessandro</givenName>
+        <givenName>alessandro.oggioni@cnr.it</givenName>
+        <surName>Oggioni</surName>
+      </individualName>
+      <organizationName>CNR - IREA</organizationName>
+      <address>
+        <deliveryPoint>Via Alfonso Corti 12</deliveryPoint>
+        <city>Milan</city>
+        <administrativeArea>MI</administrativeArea>
+        <postalCode>20154</postalCode>
+        <country>Italy</country>
+      </address>
+      <phone>000-000-0000</phone>
+      <electronicMailAddress>cre</electronicMailAddress>
+    </contact>
+    <methods>
+      <methodStep>
+        <description>
+          <section>
+            <title>General Protocols</title>
+            <para>
+      Field methods. All experiments will be carried out in the
+      greenhouse at Harvard Forest. We have developed an instrumentation
+      system that allows us to collect continuous dissolved [O2]
+      measurements: dedicated micro-probes (DO-166MT; Lazar Research
+      Laboratories: http://www.shelfscientific.com/) connected to
+      multiplexers and data loggers (AM16/32B multiplexer, CR-1000
+      datalogger and control system [Campbell Scientific:
+      http://www.cambellsci.com]). The initial ecosystem composition in
+      all experimental plants will be standardized by seeding each
+      pitcher with a 10-ml inoculum of liquid collected from pitchers
+      growing at Tom Swamp. In all experiments, prey will be supplied to
+      pitchers as standardized aliquots of dried and finely ground
+      bald-faced hornets (Dolichovespula maculata; Hymenoptera:
+      Vespidae), which we collect in quantity throughout New England.
+      Both hornets and ants (the latter are the dominant prey of S.
+      purpurea) are hymenoptera, and have nearly identical C:N ratios
+      (hornets: 3.97; common bog-dwelling ants [Tapinoma sessile and
+      Myrmica lobifrons]: 3.37), but on average hornets have greater
+      than 100 times the dry mass of these ants, and are easier to
+      collect and process as a standardized food source. Additions of
+      prey, either as large <quote>pulses</quote> or chronic
+      <quote>presses</quote> are analogous to the enrichment and
+      eutrophication that occur in aquatic <quote>green</quote> food
+      webs in which phytoplankton abundance is boosted through addition
+      of limiting nutrients. In <quote>brown</quote> food webs such as
+      the Sarracenia microecosystem, detritus - not primary production -
+      is at the base of the web, and our treatments boost this material
+      as would happen through increases in arthropod prey capture78 or
+      through nitrogen-enriched precipitation.
+    </para>
+            <para>
+      Proteomic analysis. Proteomic profiles of microbial communities
+      are determined after separating the microbial fraction from the
+      pitcher fluid, prey, and other detritus. The microbial
+      <quote>pellet</quote> is subjected to SDS-PAGE (sodium dodecyl
+      sulfate polyacrylamide gel) electrophoresis; bands are cut out and
+      digested in-gel with trypsin. Tryptic peptides are subjected to
+      LC-MS/MS (liquid chromatography tandem mass spectrometry) for
+      peptide and protein identification. Absolute abundance of peptides
+      and proteins are quantified using AQUA (Absolute QUAntification)
+      analysis109.
+    </para>
+          </section>
+          <section>
+            <title>Specific Experiments</title>
+            <para>
+      Experiment #1. Effects of nutrient enrichment on state changes and
+      [O2] profiles. This experiment alters nutrient enrichment rates to
+      characterize the [O2] profile and the transition to the anaerobic
+      state. The experimental design is a one-way layout with 5
+      treatment groups: one control (no enrichment) and 4 enrichment
+      levels (0.125, 0.25, 0.5, 1.0 mg prey added ml-1 d-1). One plant
+      is assigned to each treatment group, and the entire set is
+      replicated 6 times over successive weeks. [O2] is monitored
+      continuously for 4 days to characterize state changes and tipping
+      points under different enrichment rates. This experiment tracks a
+      continuous [O2] profile but does not include proteomic analysis.
+      The purpose of Experiment #1 is to identify an enrichment rate E
+      that generates a long pre-tipping period before transition time T
+      to the anaerobic state. This enrichment rate will be used in
+      Experiments #2 - #4.
+    </para>
+            <para>
+      Experiment #2. Identification of early intervention time and
+      characterization of aerobic and anaerobic proteomes. This
+      experiment will use the single enrichment rate E determined from
+      Experiment #1 and impose different intervention times I at which
+      nutrient enrichment will be terminated. Thus, this experiment will
+      identify the latest time I* at which it is possible to intervene
+      and stop the transition to the anaerobic state by halting
+      enrichment. The [O2] profile will again be monitored continuously
+      over 10 days to measure the state of the system. From Experiment
+      #1, the transition time T to the anaerobic state with no
+      intervention will be known. We will use one control group (no prey
+      addition) and ten levels of intervention time (all with the same
+      enrichment rate E) as a proportion of T (0.1, 0.2, 0.3, 0.4, 0.5,
+      0.6, 0.7, 0.8, 0.9, 1.0). Six plants will be assigned randomly to
+      each of the 11 treatments in a randomized one-way layout and [O2]
+      profiles will be monitored continuously. In addition to the [O2]
+      profiles, we will also characterize the protein profiles of
+      aerobic and anaerobic pitchers in all 11 treatment groups at the
+      end of the experiment.
+    </para>
+            <para>
+      After the plants are harvested, we will create proteomic profiles
+      of the predominantly bacterial portion (centrifuged pellet) of the
+      pitcher fluid from each plant, as described in General Protocols.
+      Thus, 66 separate pellet-fraction samples will be analyzed by
+      SDS-PAGE. After examining the SDS-PAGE profiles, approximately ten
+      proteins that show dynamic patterns consistent with state change
+      and five that do not change will be cut from the gel, subjected to
+      in-gel tryptic digestion and a portion of the tryptic peptides
+      will be analyzed by LC-MS/MS. Using these data, we will choose
+      three identified peptides from each protein for peptide synthesis
+      such that each synthesized peptide contains stable isotope labels
+      (AQUA peptides) to distinguish them by mass from the native
+      peptides. We will then quantify all 45 of the native peptides from
+      the original samples using a known amount of each AQUA peptide
+      spiked into the tryptic digest. The AQUA analysis of proteins that
+      do not show changes will be used for normalization between
+      samples. These data will be used to independently identify the
+      current state of the system and forecast the time-to-transition.
+    </para>
+            <para>
+      We will use Sequest searches for initial identification of
+      peptides; relevant scores including Xcorr and Delta Cn values will
+      be given for each peptide. Other peptides will be identified by de
+      novo sequencing using PepNovo; all PepNovo scores will likewise be
+      given including any N- or C-terminal gaps. Mass error in ppm will
+      be reported for each precursor ion. We will use standard
+      multivariate analysis to search for distinctive proteomic
+      profiles114 that characterize aerobic and anaerobic ecosystems, as
+      well as ecosystems that developed with and without inputs of
+      photosynthetic O2 and plant metabolites.
+    </para>
+            <para>
+      Experiment #3. Identification of diagnostic proteins. Using
+      Experiments #1 and 2, we will have identified an enrichment rate E
+      with a long pre-tipping period and an intervention time I* before
+      which mitigation and termination of enrichment will prevent
+      eutrophication. Experiment #3 will characterize the mean and
+      variance of the protein profile before and after I*. We are
+      especially interested in identifying proteins that increase
+      rapidly in abundance (or variance) well before the onset of
+      flickering in [O2] and before the transition time T from the
+      aerobic to the anaerobic state.
+    </para>
+            <para>
+      A cohort of 100 plants all will be fed at rate E (determined from
+      Experiment #1), with intervention time I* determined from
+      Experiment #2, although no intervention will be used in this
+      <quote>press</quote> experiment so that we can contrast proteins
+      before and after the state change. At seven times before I* and
+      three times after I<emphasis>, we will harvest 10 randomly chosen
+      plants. At each prescribed harvest time, we will measure [O2] and
+      collect samples from each plant for proteomic screening using both
+      SDS-PAGE and AQUA analysis. This experiment will identify proteins
+      that rise quickly in abundance during the pre- I</emphasis> period
+      and can be used as early indicators of a future tipping point.
+      Because different plants will be harvested at each time period,
+      this is a one-way ANOVA design, with pre-and post- I* a priori
+      contrasts. A randomization test will be used to determine whether
+      variances in protein expression differ through time. During these
+      analyses we will use the data from the AQUA peptides and from
+      known amounts of protein standards, such as bovine serum albumin,
+      to approximate the amount of protein in a given coomassie-stained
+      SDS-PAGE gel band. The reason for doing this is to provide a fast
+      <quote>real-time</quote> assay based just on expression in the
+      SDS-PAGE. This rapid assay will be used in Experiment #4.
+    </para>
+            <para>
+      Experiment # 4. Proof-of-application. This experiment will provide
+      a benchmark test of our methods and their ability to correctly
+      identify tipping points. A cohort of 100 plants will each be
+      fitted with [O2] probes and started on the enrichment regime. Two
+      times per day, we will collect 3 plants each, pool their contents,
+      and conduct a rapid screen in the lab with SDS-PAGE for the
+      diagnostic proteins that were identified in Experiment #3. We will
+      use the protein expression in the gel to delineate an
+      <quote>early</quote> and a <quote>late</quote> mitigation
+      strategy. As soon as diagnostic proteins measured in the SDS-gels
+      are at abundances that signal we are at 0.5×I* - approximately
+      one-half of the way to the latest intervention time - we will
+      randomly select one third of the remaining plants for mitigation
+      and termination of enrichment (the <quote>early</quote> mitigation
+      strategy). We will continue to harvest plants from the remainder
+      of the cohort and monitor proteins. As soon as diagnostic proteins
+      signal we are at 0.75 times I*, we will randomly select one half
+      of the remaining plants for mitigation and termination of
+      enrichment (the <quote>late</quote> mitigation strategy). The
+      remaining plants (approximately one sixth to one third of the
+      original cohort) will continue to be enriched. We will monitor
+      [O2] in all 3 groups (no-mitigation control, early mitigation,
+      late mitigation) until all plants reach a new [O2] equilibrium. If
+      the protein markers are successful, the proportion of food webs
+      that remain aerobic will be significantly higher in the two
+      mitigation treatments than in the no-mitigation control.
+    </para>
+          </section>
+        </description>
+      </methodStep>
+    </methods>
+    <dataTable>
+      <entityName>level1.RData</entityName>
+      <entityDescription>R file (RData) that contain 2 datasets about density (cell/ml) and biomass (mm3/m3) of phytoplankton sampling in the montly campains from January 1986 and Dicember 1987 and counting by inverted microscope. The datasets are harmonized by structural, spatial, temporal, taxonomic, and semantic folowing the gudeline of eLTER RI</entityDescription>
+      <physical>
+        <objectName>level1.RData</objectName>
+        <size unit="bytes">83450</size>
+        <authentication method="MD5">b1043c1c46ef01446d92ba57a34fff6d</authentication>
+        <dataFormat>
+          <textFormat>
+            <recordDelimiter>&#13;
+</recordDelimiter>
+            <attributeOrientation>column</attributeOrientation>
+            <simpleDelimited>
+              <fieldDelimiter>,</fieldDelimiter>
+            </simpleDelimited>
+          </textFormat>
+        </dataFormat>
+      </physical>
+    </dataTable>
+  </dataset>
+</eml:eml>
