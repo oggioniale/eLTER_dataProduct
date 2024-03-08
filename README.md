@@ -1,20 +1,4 @@
----
-title: "Data product"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{Data product}
-  %\VignetteEngine{knitr::knitr}
-  %\usepackage[UTF-8]{inputenc}
-  bibliography: ./references/occurrences_into_site_refs.bib
-author: "Alessandro Oggioni"
-date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-# General description
+# Data product description
 This data product follows the diagram provided in [Deliverable 10.3 (D10.3)](https://docs.google.com/document/d/1MJX2Vcj2LSIvW_6m4fFP_BKP60eCNYLplYVq3XHJrvU/edit) about Biodiversity loss.
 
 The workflow aims to create a data product harmonizing and integrating biodiversity observation time series (covering different organism groups) to enable the analysis and modelling of biodiversity trends.
@@ -24,7 +8,7 @@ In this example of data product, 2 dataset that contains the values of density (
 # First dataset - Phytoplankton biomass and density in Lake Candia in the 1986
 
 ## Access to biodiversity data
-![](images/access_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/access_DP_BDL_generic_workflow.png)
 
 The data is stored in a excel file that contains the values of density and biomass of phytoplankton species detected in Lake Candia in the 1986.
 ```{r, access_01}
@@ -33,7 +17,7 @@ phyto_candia_1986
 ```
 
 ## Temporary Site dataset
-![](images/temp_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/temp_DP_BDL_generic_workflow.png)
 
 The imported dataset is temporarily saved in the [rds file format](https://bookdown.org/csgillespie/efficientR/input-output.html). rds files are commonly used for saving R objects. Saving your R object as an rds file can be useful for sharing your work with others, replicating your analysis, or storing your work for later use.
 ```{r, temp_dataset_01}
@@ -42,7 +26,7 @@ save(phyto_candia_1986, file = "phyto_candia_1986.rds")
 ```
 
 ## Structural harmonization
-![](images/stru_harm_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/stru_harm_DP_BDL_generic_workflow.png)
 
 The structural harmonization step is missing because it is unclear which data structure eLTER is currently using.
 The output of this step is stored in the rds file.
@@ -52,7 +36,7 @@ save(phyto_candia_1986, file = "phyto_candia_1986.rds")
 ```
 
 ## Spatial harmonization
-![](images/spa_harm_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/spa_harm_DP_BDL_generic_workflow.png)
 
 The information about the coordinates (latitude and longitude) where the different species are observed is included in the spatial harmonization step.
 The output of this step is stored in the rds file.
@@ -73,7 +57,7 @@ save(harmonized_phyto_candia_1986, file = "phyto_candia_1986.rds")
 ```
 
 ## Temporal harmonization
-![](images/temp_harm_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/temp_harm_DP_BDL_generic_workflow.png)
 
 The time reference column has been renamed using the terminology suggested by the [controlled vocabulary (DwC)](https://dwc.tdwg.org/list/). Additionally, the content has been defined as a date using R [lubridate library](https://lubridate.tidyverse.org) to facilitate the transformation.
 The output of this step is stored in the rds file.
@@ -88,7 +72,7 @@ saveRDS(harmonized_phyto_candia_1986, file = "phyto_candia_1986.rds")
 ```
 
 ## Taxonomic harmonization
-![](images/taxa_harm_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/taxa_harm_DP_BDL_generic_workflow.png)
 
 The dataset was taxonomically harmonised using the [taxon_id_worms](https://docs.ropensci.org/ReLTER/reference/taxon_id_worms.html) function from the [ReLTER package](https://docs.ropensci.org/ReLTER/index.html). This involved validating the species names and adding additional columns to the dataset, with headers suggested by the [DwC controlled vocabulary](https://dwc.tdwg.org/list/). These changes allow for better specification of the taxonomic aspects of the dataset, such as taxonRank, [LSID](https://en.wikipedia.org/wiki/LSID), and scientificNameAuthorship .
 The output of this step is stored in the rds file.
@@ -104,7 +88,7 @@ saveRDS(harmonized_phyto_candia_1986, file = "phyto_candia_1986.rds")
 ```
 
 ## Sematic harmonization
-![](images/sem_harm_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/sem_harm_DP_BDL_generic_workflow.png)
 
 The previous steps began the harmonisation of terms, including temporal or taxonomic harmonisation. In this step, the column headings that were still missing have been modified using the terms recommended by the [DwC vocabulary](https://dwc.tdwg.org/list/). To convert between units of measurement for each column containing numerical values, the respective units have been associated using the [R units package](https://r-quantities.github.io/units/).
 The output of this step is stored in the rds file.
@@ -125,7 +109,7 @@ saveRDS(harmonized_phyto_candia_1986, file = "phyto_candia_1986.rds")
 ```
 
 ## Quality control and quality check
-![](images/qc_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/qc_DP_BDL_generic_workflow.png)
 ```{r, qc_01}
 
 ```
@@ -133,7 +117,7 @@ saveRDS(harmonized_phyto_candia_1986, file = "phyto_candia_1986.rds")
 This step is missing because I don't know the what quality control to do on this data.
 
 ## Dataset 01 at Level 0
-![](images/level0_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/level0_DP_BDL_generic_workflow.png)
 
 After undergoing quality control and harmonization, data about phytoplankton specie observed in 1986 appears as follows.
 ```{r, return_lev0_01}
@@ -145,7 +129,7 @@ level0_dataset_01
 # Second dataset - Phytoplankton biomass and density in Lake Candia in the 1987
 
 ## Access to biodiversity data
-![](images/access_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/access_DP_BDL_generic_workflow.png)
 
 The data are stored in an Excel file that contains the values of density and biomass of phytoplankton species detected in Lake Candia in 1987.
 ```{r, access_02}
@@ -154,7 +138,7 @@ phyto_candia_1987
 ```
 
 ## Temporary Site dataset
-![](images/temp_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/temp_DP_BDL_generic_workflow.png)
 
 The imported dataset is temporarily saved in the rds file format. rds files are commonly used for saving R objects. Saving your R object as an rds file can be useful for sharing your work with others, replicating your analysis, or storing your work for later use.
 ```{r, temp_dataset_02}
@@ -163,7 +147,7 @@ save(phyto_candia_1987, file = "phyto_candia_1987.rds")
 ```
 
 ## Structural harmonization
-![](images/stru_harm_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/stru_harm_DP_BDL_generic_workflow.png)
 
 The structural harmonization step is missing because it is unclear which data structure eLTER is currently using.
 The output of this step is stored in the rds file.
@@ -173,7 +157,7 @@ save(phyto_candia_1987, file = "phyto_candia_1987.rds")
 ```
 
 ## Spatial harmonization
-![](images/spa_harm_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/spa_harm_DP_BDL_generic_workflow.png)
 
 The information about the coordinates (latitude and longitude) where the different species are observed is included in the spatial harmonization step.
 The output of this step is stored in the rds file.
@@ -194,7 +178,7 @@ save(harmonized_phyto_candia_1987, file = "phyto_candia_1987.rds")
 ```
 
 ## Temporal harmonization
-![](images/temp_harm_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/temp_harm_DP_BDL_generic_workflow.png)
 
 The time reference column has been renamed using the terminology suggested by the [controlled vocabulary (DwC)](https://dwc.tdwg.org/list/). Additionally, the content has been defined as a date using R [lubridate library](https://lubridate.tidyverse.org) to facilitate the transformation.
 The output of this step is stored in the rds file.
@@ -209,7 +193,7 @@ saveRDS(harmonized_phyto_candia_1987, file = "phyto_candia_1987.rds")
 ```
 
 ## Taxonomic harmonization
-![](images/taxa_harm_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/taxa_harm_DP_BDL_generic_workflow.png)
 
 The dataset was taxonomically harmonised using the [taxon_id_worms](https://docs.ropensci.org/ReLTER/reference/taxon_id_worms.html) function from the [ReLTER package](https://docs.ropensci.org/ReLTER/index.html). This involved validating the species names and adding additional columns to the dataset, with headers suggested by the [DwC controlled vocabulary](https://dwc.tdwg.org/list/). These changes allow for better specification of the taxonomic aspects of the dataset, such as taxonRank, [LSID](https://en.wikipedia.org/wiki/LSID), and scientificNameAuthorship .
 The output of this step is stored in the rds file.
@@ -225,7 +209,7 @@ saveRDS(harmonized_phyto_candia_1987, file = "phyto_candia_1987.rds")
 ```
 
 ## Sematic harmonization
-![](images/sem_harm_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/sem_harm_DP_BDL_generic_workflow.png)
 
 The previous steps began the harmonisation of terms, including temporal or taxonomic harmonisation. In this step, the column headings that were still missing have been modified using the terms recommended by the [DwC vocabulary](https://dwc.tdwg.org/list/). To convert between units of measurement for each column containing numerical values, the respective units have been associated using the [R units package](https://r-quantities.github.io/units/).
 The output of this step is stored in the rds file.
@@ -246,7 +230,7 @@ saveRDS(harmonized_phyto_candia_1987, file = "phyto_candia_1987.rds")
 ```
 
 ## Quality control and quality check
-![](images/qc_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/qc_DP_BDL_generic_workflow.png)
 ```{r, qc_02}
 
 ```
@@ -254,7 +238,7 @@ saveRDS(harmonized_phyto_candia_1987, file = "phyto_candia_1987.rds")
 This step is missing because I don't know the what quality control to do on this data.
 
 ## Dataset 02 at Level 0
-![](images/level0_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/level0_DP_BDL_generic_workflow.png)
 
 After undergoing quality control and harmonization, data about phytoplankton specie observed in 1987 appears as follows.
 ```{r, return_lev0_02}
@@ -266,7 +250,7 @@ level0_dataset_02
 # Merge Level 0 datasets in a result data (Level 1)
 
 ## Result dataset (Level 1)
-![](images/level1_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/level1_DP_BDL_generic_workflow.png)
 
 The data was combined into one file. In this case, a typical [RStudio platform file (RData)](https://bookdown.org/ndphillips/YaRrr/rdata-files.html) was used because it can hold multiple datasets with varying structures. The data in the example have the same structure and columns after harmonization. However, there may be cases where this is not true, or where level 1 datasets contain data on different variables. In such cases, using RData files could help to package level 1 data together.
 ```{r}
@@ -277,7 +261,7 @@ load("level1.RData")
 # Generate metadata and provenance on result dataset
 
 ## Metadata of the result dataset (Level 1) in EML
-![](images/metadata_result_DP_BDL_generic_workflow.png){#id .class width=20%}
+![](images/metadata_result_DP_BDL_generic_workflow.png)
 
 Following the flow, a medatada file is generated by [EML package](https://docs.ropensci.org/EML/index.html) for the level 1 dataset.
 The metadata is stored in an XML file called level1.xml.
